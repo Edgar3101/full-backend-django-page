@@ -1,0 +1,84 @@
+
+body{
+	font-family: "Roboto", sans-serif;
+    font-size: 17px;
+    background-color: black;
+    color: white;
+}
+.container{
+	padding-left: 2px;
+	padding-right: 3px;
+}
+a{
+	color: #ffffff;
+    text-decoration: none
+}
+ul{
+	list-style: none;
+}
+
+.nav-class{
+	font-size= 17px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 50px;
+	padding: :20px 0;
+}
+.nav-brand{
+	width:50px;
+}
+.nav-class ul{
+	display: flex;
+	
+}
+.nav-class ul li{
+	padding: 10px;
+}
+.nav-class ul li a{
+	padding: 2px;
+}
+.nav-class ul li a:hover{
+	border-bottom: 3px solid white;
+}
+.nav-class ul.menu-nav{
+	flex: 1;
+	margin-left: 20px;
+}
+.showcase{
+	width: 95%;
+  	height: 550px;
+	margin: 10px;
+	background: url("img/city1.jpg");
+	background-repeat: no-repeat;
+	padding-left: 50px;
+	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+	justify-content: flex-end;
+  	padding-bottom: 15px;
+  	
+  	
+}
+.showcase h2,
+.showcase p{
+	margin-bottom: 10px;
+}
+
+
+.cards {
+  padding: 2px 6px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin: 40px 0;
+}
+.individual-cards{
+	background: url("img/city.jpg") no-repeat center center/cover;
+}
+.individual-cards h3,
+.individual-cards p{
+	padding-left: 3px;
+
+}
+

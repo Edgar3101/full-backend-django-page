@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+{% load static %} 
+{% block content %}
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My page</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+     
+</head>
+<body>
+	
+<div class="container">
+	{% include 'blog/navbar.html' %}
+	{%endblock%}
+	<div class="showcase">
+		<img src="{% static 'img/city1.jpg' %}" class="img1">
+		<div class="new1"><h1><a href="#">Fin de la Pandemia!</a></h1></div>
+		<div class="sub1">Lorem ipsum dolor sit amet consectetur</div>
+	</div>
+	<div class="card">
+		<div>
+			<img src="{% static 'img/city.jpg' %}">
+			<h3>Lorem ipsum dolor sit amet</h3>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, reprehender</p>
+			<a href="#">Saber mas<i class="fas fa-angle-double-right"></i></a>
+		</div>
+		<div>
+			<img src="{% static 'img/city.jpg' %}">
+			<h3>Lorem ipsum dolor sit amet</h3>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, reprehender</p>
+			<a href="#">Saber mas<i class="fas fa-angle-double-right"></i></a>
+		</div>
+		<div>
+			<img src="{% static 'img/city.jpg' %}" >
+			<h3>Lorem ipsum dolor sit amet</h3>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, reprehender</p>
+			<a href="#">Saber mas<i class="fas fa-angle-double-right"></i></a>
+		</div>
+		<div>
+			<img src="{% static 'img/city.jpg' %}" >
+			<h3>Lorem ipsum dolor sit amet</h3>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, reprehender</p>
+			<a href="#">Saber mas<i class="fas fa-angle-double-right"></i></a>
+		</div>
+
+	</div>
+	
+	
+</div>
+
+
+</body>
+</html>
