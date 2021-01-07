@@ -16,16 +16,16 @@
 		<img src="{% static 'img/wolf.png' %}" class="wolf-brand">
 		<ul class="nav-menu">
 			<li>
-				<a href="#">Pagina de Inicio</a>
+				<a href="{% url 'home' %}">Pagina de Inicio</a>
 			</li>
 			<li>
-				<a href="#">Sobre Mi</a>
+				<a href="{% url 'profile' %}">Sobre Mi</a>
 			</li>
 			<li>
-				<a href="#">Contactos</a>
+				<a href="{% url 'contacts' %}">Contactos</a>
 			</li>
 			<li>
-				<a href="#">Curriculum</a>
+				<a href="{% url 'resume' %}">Curriculum</a>
 			</li>
 		</ul>
 
