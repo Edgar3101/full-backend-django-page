@@ -27,7 +27,7 @@ class Post(models.Model):
 class Profile(models.Model):
     name= models.CharField(max_length=200, unique=True)
     email= models.EmailField(max_length=224)
-    profile_photo= models.ImageField(upload_to="static/img/profiles/")
+    profile_photo= models.ImageField(upload_to="profiles/")
     update_on = models.DateTimeField(auto_now= True)
     class Meta:
         ordering = ['-update_on']

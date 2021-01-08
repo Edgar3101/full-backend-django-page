@@ -16,33 +16,38 @@
 	{% include 'blog/navbar.html' %}
 	{%endblock%}
 	<div class="showcase">
-		<img src="{% static 'img/city1.jpg' %}" class="img1">
-		<div class="new1"><h1><a href="#">Fin de la Pandemia!</a></h1></div>
-		<div class="sub1">Lorem ipsum dolor sit amet consectetur</div>
+		
+		
+		<img src="{{ post_list.0.photos.url }}" class="img1">
+		<div class="new1"><h1><a href="#">{{ post_list.0.title }}</a></h1></div>
+		<div class="sub1">{{ post_list.0.preview }}</div>
+		
 	</div>
 	<div class="card">
 		<div>
-			<img src="{% static 'img/city.jpg' %}">
-			<h3>Lorem ipsum dolor sit amet</h3>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, reprehender</p>
+			
+			<img src="{{ post_list.1.photos.url }}">
+			<h3>{{ post_list.1.title }}</h3>
+			<p>{{ post_list.1.preview }}</p>
+			<a href="#">Saber mas<i class="fas fa-angle-double-right"></i></a>
+			
+		</div>
+		<div>
+			<img src="{{ post_list.2.photos.url }}">
+			<h3>{{ post_list.2.title }}</h3>
+			<p>{{ post_list.2.preview }}</p>
 			<a href="#">Saber mas<i class="fas fa-angle-double-right"></i></a>
 		</div>
 		<div>
-			<img src="{% static 'img/city.jpg' %}">
-			<h3>Lorem ipsum dolor sit amet</h3>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, reprehender</p>
+			<img src="{{ post_list.3.photos.url }}">
+			<h3>{{ post_list.3.title }}</h3>
+			<p>{{ post_list.3.preview }}</p>
 			<a href="#">Saber mas<i class="fas fa-angle-double-right"></i></a>
 		</div>
 		<div>
-			<img src="{% static 'img/city.jpg' %}" >
-			<h3>Lorem ipsum dolor sit amet</h3>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, reprehender</p>
-			<a href="#">Saber mas<i class="fas fa-angle-double-right"></i></a>
-		</div>
-		<div>
-			<img src="{% static 'img/city.jpg' %}" >
-			<h3>Lorem ipsum dolor sit amet</h3>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, reprehender</p>
+			<img src="{{ post_list.4.photos.url }}">
+			<h3>{{ post_list.4.title }}</h3>
+			<p>{{ post_list.4.preview }}</p>
 			<a href="#">Saber mas<i class="fas fa-angle-double-right"></i></a>
 		</div>
 
